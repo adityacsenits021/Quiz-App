@@ -9,6 +9,8 @@ const reducer=(state,action)=>{
             return {...state,score:state.score+4}
         case 'incorrect':
             return {...state,score:state.score-1}
+        case 'setscorezero':
+            return {...state,score:0}
         case 'yes':
             return {...state,page:state.page+1} 
         case 'set':

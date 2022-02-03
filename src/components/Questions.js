@@ -20,6 +20,7 @@ function Questions() {
   const over = setTimeout(()=>{
     navigate('over',{replace:true})
     scoreDispatch({type:'setnull'})
+    // scoreDispatch({type:'setscorezero'})
   }, 30000);
   
   },[page]);
@@ -33,7 +34,6 @@ function Questions() {
   },[timecounter]);
   
   return <div className='questionfull'>
-    <h5>score is - {score.score}</h5>
     {
       questions.map((question,index)=>{
       return <div className="set" key={index}>
@@ -44,7 +44,7 @@ function Questions() {
     {/* <QuestionItem question={[question]}/> */}
     
    
-    <span className='submit'>Submit</span>
+    {/* <span className='submit'>Submit</span> */}
   </div>;
 }
 
