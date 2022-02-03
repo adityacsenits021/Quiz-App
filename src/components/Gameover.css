@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    width: 100vw;
+}
+.overbox{
+    margin: 2vh 0;
+    min-height: 40vh;
+    width: 60vw;
+   
+    border: 1px solid black;
+    border-radius: 5px;
+}
+h6{
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form input{
+    margin-right: 2vw;
+}

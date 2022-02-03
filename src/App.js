@@ -5,6 +5,7 @@ import ScoreState from './context/ScoreState'
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar';
 import GameOver from './components/GameOver';
+import HighScore from './components/HighScore';
 
 function App() {
   return(
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/question' element={<Questions/>}/>
             <Route path='/question/over' element={<GameOver/>}/>
+        <Route path='highscore' element={<HighScore/>}/>
         
       </Routes>
     </ScoreState>

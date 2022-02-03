@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useReducer } from 'react';
 import ScoreContext from './ScoreContext';
-const initial={score:0,page:0}
+const initial={score:0,page:0,timecounter:null}
 
 const reducer=(state,action)=>{
     switch(action.type){
@@ -11,6 +11,12 @@ const reducer=(state,action)=>{
             return {...state,score:state.score-1}
         case 'yes':
             return {...state,page:state.page+1} 
+        case 'set':
+            return {...state,timecounter:50} 
+        case 'decrease':
+            return {...state,timecounter:state.timecounter-1} 
+        case 'setnull':
+            return {...state,timecounter:null} 
         default:
             return state
     }

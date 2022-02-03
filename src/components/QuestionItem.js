@@ -6,7 +6,7 @@ import ScoreContext from '../context/ScoreContext';
 function QuestionItem(props) {
     // const [index, setindex] = useState(0);
     const context = useContext(ScoreContext)
-    const {scoreDispatch}=context
+    const {score,scoreDispatch}=context
     const choices=['A','B','C','D']
     const {question,correct_answer,incorrect_answers}=props.question
     const index_correct=Math.floor(Math.random() * 3 )+1;
@@ -23,7 +23,9 @@ function QuestionItem(props) {
                   }else{
                     scoreDispatch({type:'incorrect'})
                   }
-                  scoreDispatch({type:"yes"})
+                  if(score.page<5){
+                    scoreDispatch({type:"yes"})
+                  }
               }}>
                   <span>{choices[index]}</span>
                   
@@ -36,4 +38,4 @@ function QuestionItem(props) {
   </div>;
 }
 
-export default QuestionItem;
+export default React.memo(QuestionItem) ;

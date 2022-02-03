@@ -1,0 +1,54 @@
+.highscorecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    width: 100vw;
+}
+.overbox{
+    margin: 2vh 0;
+    min-height: 40vh;
+    width: 60vw;
+   display: flex;
+   flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #218380;
+}
+.useritem{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(167, 152, 152);
+    margin-bottom: 1vh;
+}
+h5{
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+h6{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 500;
+    max-width: 3;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    min-width: 100px;
+    padding: 8px 15px;
+    margin: 2vh 5vw;
+    background-color: #218380;
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+}
